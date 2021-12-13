@@ -1,0 +1,33 @@
+@import url('style.css');
+
+/*========== RULES FOR MAIN CONTENT =========*/
+.main
+{
+    position: absolute;
+    top: 0;
+    left: var(--navbar-size);
+
+}
+
+.section
+{
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    z-index: -10;
+    
+}
+
+@media (max-width: 991px)
+{
+    
+    .main
+    {
+        left: 0;
+    }
+
+}

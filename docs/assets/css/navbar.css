@@ -1,0 +1,170 @@
+@import url('style.css');
+/* ========== NAV RULES ========== */
+.nav
+{
+    position: fixed;
+    background: var(--red);
+    color: var(--white);
+    width: var(--navbar-size);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.nav ul li
+{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.nav ul li a
+{
+    color: var(--white);
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.nav ul li:hover a ion-icon,
+.nav ul li.active a ion-icon
+{
+    width: 50px;
+    height: 50px;
+    background: var(--white);
+    border-radius: 30%;
+    color: var(--red);
+    transform: translateX(30px);
+    transition: 0.5s;
+}
+
+.nav ul li a ion-icon
+{
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    transition: 0.5s;
+}
+
+.nav ul li:hover a::before,
+.nav ul li.active a::before
+{
+    content: '';
+    position: absolute;
+    right: -5px;
+    width: 10px;
+    top: -10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 6px 4px 0 1px var(--white);
+    pointer-events: none;
+    transition: 1s;
+}
+
+.nav ul li:hover a::after,
+.nav ul li.active a::after
+{
+    content: '';
+    position: absolute;
+    right: -5px;
+    width: 10px;
+    bottom: -10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 5px -5px 0 -3px var(--white);
+    pointer-events: none;
+    transition: 1s;
+}
+
+
+
+.nav__logo
+{
+    max-width: 60px;
+    height: 60px;
+    margin-top: 1em;
+    position: absolute;
+    top: 0;
+}
+
+.nav__logo img
+{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 991px)
+{
+    /* ========== NAV RULES ========== */
+    .nav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 4em;
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 0%;
+        border-top-left-radius: 10%;
+        transition: 0.5s;
+        flex-direction: row;
+        border-top: 2px solid var(--red);
+    }
+
+    .nav ul
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav ul li
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav__logo
+    {
+        display: none;
+    }
+
+    .nav ul li:hover a ion-icon,
+    .nav ul li.active a ion-icon
+    {
+        width: 40px;
+        height: 40px;
+        background: var(--white);
+        border-radius: 30%;
+        color: var(--red);
+        transform: translateY(-30px);
+        transition: 0.5s;
+    }
+
+    .nav ul li:hover a::after,
+    .nav ul li.active a::after
+    {
+        display: none;
+    }
+
+    .nav ul li:hover a::before,
+    .nav ul li.active a::before
+    {
+        display: none;
+    }
+}
