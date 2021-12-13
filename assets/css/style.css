@@ -31,6 +31,7 @@
     width: 100%;
 }
 
+/* ========== NAV RULES ========== */
 .nav
 {
     position: fixed;
@@ -44,6 +45,7 @@
     border-top-right-radius: 10%;
     border-bottom-right-radius: 10%;
     transition: 0.5s;
+    z-index: 10;
 }
 
 .nav ul li
@@ -137,8 +139,34 @@
     height: 100%;
 }
 
+/*========== RULES FOR MAIN CONTENT =========*/
+.main
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.section
+{
+    /*width: 100vh;
+    height: 100vh;*/
+    z-index: -10;
+    transition: 0.5s;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+}
+
 @media (max-width: 991px)
 {
+    /* ========== NAV RULES ========== */
     .nav{
         position: fixed;
         bottom: 0;
@@ -197,4 +225,13 @@
         display: none;
     }
 
+    /*========== RULES FOR MAIN CONTENT =========*/
+    .main
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        flex-direction: row;
+    }
 }
