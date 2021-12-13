@@ -28,26 +28,12 @@ nav.forEach((item) =>
         clearActive();
         item.classList.add('active');
 
-        /* ========== NAVIGATION THROUGH SECTION ========== */
-        // console.log(item.id);
-        // clearSectionActive();
-        // switch(item.id)
-        // {
-        //     case 'dashboard__button':
-        //         setSectionActive(sections[0]);
-        //         break;
-        //     case 'achats__button':
-        //         setSectionActive(sections[1]);
-        //         break;
-        //     case 'stock__button':
-        //         setSectionActive(sections[2]);
-        //         break;
-        //     case 'settings__button':
-        //         setSectionActive(sections[3]);
-        //         break;
-        // }
     });
 });
+
+
+
+
 
 
 

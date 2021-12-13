@@ -17,7 +17,13 @@
         Responsive Native Sidebar
         </title>
 
+        <!-- ========== BASIC CSS RULES ========== -->
         <link href="assets/css/style.css" rel="stylesheet">
+        <!-- ========== NAVBAR CSS RULES ========== -->
+        <link href="assets/css/navbar.css" rel="stylesheet">
+        <!-- ========== MAIN CSS RULES ========== -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <!-- ========== FULLPAGE ========== -->
         <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css" />
     </head>
 
@@ -50,24 +56,25 @@
         </div>
 
         <div id="fullpage" class="main">
-            <section class="section">
-                Dashboard
-            </section>
-            <section class="section">
+            <div id="default" class="section active">
+               Tableau de bord
+            </div>
+            <div class="section">
                Gestion Achats
-            </section>
-            <section class="section">
+            </div>
+            <div class="section">
                 Gestion Stock
-            </section>
-            <section class="section">
+            </div>
+            <div class="section">
                 Paramètres
-            </section>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/js/scrolloverflow.min.js"></script>
+        <script type="text/javascript" src="assets/js/fullpage.js"></script>
         <script src="assets/js/main.js"></script>
         <script type="text/javascript" src="assets/js/misc.js"></script>
-        <script type="text/javascript" src="assets/js/fullpage.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
