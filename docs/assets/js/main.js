@@ -31,6 +31,29 @@ nav.forEach((item) =>
     });
 });
 
+let addB =  document.querySelectorAll('.add');
+let removeB =  document.querySelectorAll('.remove');
+
+addB.forEach((item) =>
+{
+    item.addEventListener('click',() => {
+        var valeur = parseInt(item.parentElement.children[1].value);
+        valeur++;
+        item.parentElement.children[1].value = valeur;
+
+    });
+});
+
+removeB.forEach((item) =>
+{
+    item.addEventListener('click',() => {
+        var valeur = parseInt(item.parentElement.children[1].value);
+        if(valeur>0)valeur--;
+        item.parentElement.children[1].value = valeur;
+
+    });
+});
+
 
 
 

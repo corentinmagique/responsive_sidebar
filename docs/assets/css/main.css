@@ -52,7 +52,7 @@
 .boxs .card .card__icon
 {
     font-size: 3.5em;
-    color: var(--light-black);
+    color: var(--gray);
 }
 
 @media (max-width: 991px)
@@ -66,7 +66,184 @@
 
 }
 
-@media (max-width: 482px)
+/* ========== RULES LISTE ACHAT ========== */
+.liste
+{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin-top: 10px;
+}
+
+.liste .achats
+{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+}
+
+.liste__title
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.liste__title h2
+{
+    font-weight: var(--font-semi-bold);
+    color: var(--red);
+}
+
+.buton
+{
+    position: relative;
+    padding: 5px 10px;
+    background: var(--red);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+
+}
+
+.liste table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.liste table thead td
+{
+    font-weight: var(--font-semi-bold);
+}
+
+.liste .achats table tr
+{
+    color: var(--black);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.liste .achats table tr:last-child
+{
+    border-bottom: none;
+}
+
+.liste table thead tr td
+{
+    font-weight: bold;
+}
+
+.liste .achats table tr td
+{
+    padding: 10px;
+}
+
+.liste .achats table tr td:last-child
+{
+    text-align: end;
+}
+
+.liste .achats table tr td:nth-child(2),
+.liste .achats table tr td:nth-child(3),
+.liste .achats table tr td:nth-child(4)
+{
+    text-align: center;
+}
+
+.statut
+{
+    padding: 2px 4px;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: var(--font-medium);
+}
+
+.statut.expedie
+{
+    background: #8de02c;
+}
+
+.statut.preparation
+{
+    background: #FFC44D;
+}
+
+.statut.annule
+{
+    background: #f00;
+}
+
+.tab__name
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.tab__input input
+{
+    width: 50px;
+    border-radius: 5px;
+    border: solid 2px gray;
+    text-align: center;
+}
+
+.tab__icon
+{
+    width: 50px;
+    height: 50px;
+}
+
+.tab__text
+{
+    padding-left: 10px;
+}
+
+.tab__button
+{
+    cursor: pointer;
+    border: none;
+    background: none;
+    
+}
+
+.tab__input
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.add
+{
+    font-size: 1.25em;
+    color: #8de02c;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.remove
+{
+    font-size: 1.25em;
+    color: #f00;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 568px)
 {
     
     .main .section .boxs

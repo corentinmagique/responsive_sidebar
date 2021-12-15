@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>
-        Responsive Native Sidebar
+        NIXIA POS v2
         </title>
 
         <!-- ========== BASIC CSS RULES ========== -->
@@ -46,10 +46,7 @@
                         <a href="#stock"><ion-icon name="cube-outline"></ion-icon></a>
                         
                     </li>
-    
-                    <li id="settings__button">
-                        <a href="#settings"><ion-icon name="hammer-outline"></ion-icon></a>
-                    </li>
+
                 </ul>
 
             </nav>
@@ -57,37 +54,231 @@
 
         <div id="fullpage" class="main">
             <div id="default" class="section active">
+                <h1>Tableau de bord</h1>
                 <div class="boxs">
 
                     <div class="card">
                         <div>
-                            <div class="card__data">50 000€</div>
+                            <div class="card__data">0€</div>
                             <div class="card__title">Chiffre d'affaire</div>
                         </div>
                         <div class="card__icon">
-                            <ion-icon name="cash-outline"></ion-icon>
+                            <ion-icon name="pricetags-outline"></ion-icon>
                         </div>
                     </div>
     
                     <div class="card">
                         <div>
-                            <div class="card__data">100</div>
+                            <div class="card__data">0</div>
                             <div class="card__title">Achat(s)</div>
                         </div>
                         <div class="card__icon">
-                            <ion-icon name="basket-outline"></ion-icon>
+                            <ion-icon name="bag-handle-outline"></ion-icon>
                         </div>
                     </div>
                </div>
+               <!-- LISTE ACHATS -->
+            <div class="liste">
+                <div class="achats">
+                    <div >
+                        <h2 class="liste__title">Achats du jour</h2>
+                        <!-- <a href="#" class="buton">Voir</a> -->
+                    </div>
+
+                    <!-- TABLEAU ACHATS -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nom</td>
+                                <td>Prix</td>
+                                <td>Quantité</td>
+                                <td>Statut</td>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="tab__name">
+                                        <img class="tab__icon" src="assets/img/poulet-roti.png" alt="Poulet illustration">
+                                        <div class="tab__text">
+                                            Poulet
+                                        </div> 
+                                    </div>
+                                </td>
+                                <td>5.99€</td>
+                                <td>1</td>
+                                <td><span class="statut expedie">Expédiée</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tab__name">
+                                        <img class="tab__icon" src="assets/img/ananas.png" alt="Ananas illustration">
+                                        <div class="tab__text">
+                                            Ananas
+                                        </div> 
+                                    </div>
+                                </td>
+                                <td>10.99€</td>
+                                <td>4</td>
+                                <td><span class="statut preparation">Préparation</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="tab__name">
+                                        <img class="tab__icon" src="assets/img/cacahuete.png" alt="Pistache illustration">
+                                        <div class="tab__text">
+                                            Pistache
+                                        </div> 
+                                    </div>
+                                </td>
+                                <td>2.99€</td>
+                                <td>1</td>
+                                <td><span class="statut annule">Annulée</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             </div>
             <div class="section">
-               Gestion Achats
+                <h1>Ajouter un achat</h1>
             </div>
             <div class="section">
-                Gestion Stock
-            </div>
-            <div class="section">
-                Paramètres
+                <h1>Gestion des stocks</h1>
+                <!-- LISTE ACHATS -->
+            <div class="liste">
+                <div class="achats">
+                    <!-- TABLEAU ACHATS -->
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nom du produit</td>
+                                <td>Quantité Restante</td>
+                                <td>Prix de l'unité</td>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="tab__name">
+                                        <img class="tab__icon" src="assets/img/poulet-roti.png" alt="Poulet illustration">
+                                        <div class="tab__text">
+                                            Poulet
+                                        </div> 
+                                    </div>
+                                </td>
+                                <td >
+                                    <div class="tab__input">
+                                        <ion-icon class="add" name="add-circle-outline"></ion-icon>
+                                        <input type="text" value="45">
+                                        <ion-icon class="remove" name="remove-circle-outline"></ion-icon>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tab__input">
+                                        <input type="text" value="9.99€">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="tab__name">
+                                        <img class="tab__icon" src="assets/img/ananas.png" alt="Ananas illustration">
+                                        <div class="tab__text">
+                                            Ananas
+                                        </div> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tab__input">
+                                        <ion-icon class="add" name="add-circle-outline"></ion-icon>
+                                        <input type="text" value="150">
+                                        <ion-icon class="remove" name="remove-circle-outline"></ion-icon>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tab__input">
+                                        <input type="text" value="2.99€">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="tab__name">
+                                        <img class="tab__icon" src="assets/img/cacahuete.png" alt="Pistache illustration">
+                                        <div class="tab__text">
+                                            Pistache
+                                        </div> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tab__input">
+                                        <ion-icon class="add" name="add-circle-outline"></ion-icon>
+                                        <input type="text" value="10">
+                                        <ion-icon class="remove" name="remove-circle-outline"></ion-icon>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tab__input">
+                                        <input type="text" value="3.50€">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="tab__name">
+                                        <img class="tab__icon" src="assets/img/du-coca.png" alt="Coca illustration">
+                                        <div class="tab__text">
+                                            Coca Cola
+                                        </div> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tab__input">
+                                        <ion-icon class="add" name="add-circle-outline"></ion-icon>
+                                        <input type="text" value="300">
+                                        <ion-icon class="remove" name="remove-circle-outline"></ion-icon>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tab__input">
+                                        <input type="text" value="2.50€">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="tab__name">
+                                        <img class="tab__icon" src="assets/img/chips.png" alt="Chips illustration">
+                                        <div class="tab__text">
+                                            Chips
+                                        </div> 
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tab__input">
+                                        <ion-icon class="add" name="add-circle-outline"></ion-icon>
+                                        <input type="text" value="50">
+                                        <ion-icon class="remove" name="remove-circle-outline"></ion-icon>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="tab__input">
+                                        <input type="text" value="1.50€">
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
